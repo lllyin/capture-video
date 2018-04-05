@@ -22,9 +22,9 @@
     您的浏览器不支持video标签
 </video>
 <video src="v1.mp4" width="500" controls class="video">您的浏览器不支持video标签</video>
-<video src="v2.mp4" width="500" controls class="video">您的浏览器不支持video标签</video>
-<video src="v3.mp4" width="500" controls class="video">您的浏览器不支持video标签</video>
-<video src="v4.mp4" width="500" controls class="video">您的浏览器不支持video标签</video>
+<video src="v1.mp4" width="500" controls class="video">您的浏览器不支持video标签</video>
+<video src="v1.mp4" width="500" controls class="video">您的浏览器不支持video标签</video>
+<video src="v1.mp4" width="500" controls class="video">您的浏览器不支持video标签</video>
 
 <h1>截取图片在此</h1>
 
@@ -61,8 +61,6 @@
         if(myCache[videoSrc]){
             console.log("存在缓存");
             _oVideo = myCache[videoSrc].video;
-            console.log("-1-timePoint",timePoint);
-            console.log("视频当前时间",_oVideo.currentTime);
             _oCanvas = myCache[videoSrc].canvas;
             _context = _oCanvas.getContext('2d');
         }else{
@@ -71,7 +69,6 @@
             _context = _oCanvas.getContext('2d');
             _oVideo = document.createElement("video");
             _oVideo.src = videoSrc;
-            console.log("-2-timePoint",timePoint);
             myCache[videoSrc] = {
                 video:_oVideo,
                 canvas:_oCanvas,

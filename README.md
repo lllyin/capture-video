@@ -4,6 +4,9 @@
 ## 运行
 > 本demo需要在一个web server下才能完美运行
 
+## Online Demo
+[https://andesome.github.io/capture-video/canvas.html](https://andesome.github.io/capture-video/canvas.html)
+
 ## 开启一个web server
 ```
  1.全局安装http-server

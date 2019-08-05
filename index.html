@@ -1,0 +1,49 @@
+<!-- created by ling on 2017-12-22 17:48. -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>canvas test</title>
+    <style type="text/css">
+        #canvas {
+            border: 1px solid #000;
+        }
+
+        .poster-list {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .poster-list>div {
+            margin: 0 10px 10px 10px;
+        }
+
+        .poster-list img {
+            width: 150px;
+            height: 150px;
+        }
+
+        .poster-list span {
+            display: block;
+            color: #555;
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <video src="test.mp4" width="500" controls class="video" poster="undefined">
+        您的浏览器不支持video标签
+    </video>
+
+    <h1>截取图片在此:</h1>
+    <div class="poster-list">
+
+    </div>
+
+    <script src="./capture-viedeo.js"></script>
+</body>
+
+</html>
